@@ -52,7 +52,7 @@ function LineGraph() {
 
   useEffect(() => {
     const fetchData = async () => {
-      fetch("https://disease.sh/v3/covid-19/historical/all?lastdays=30")
+      fetch("https://disease.sh/v3/covid-19/historical/all?lastdays=220")
         .then((res) => res.json())
         .then((data) => {
           const chartData = buildChartData(data, "cases");
